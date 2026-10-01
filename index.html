@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Data Mahasiswa</title>
+</head>
+
+<body>
+        <header>
+                <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PPWD
+                </h1>
+                <p>Website ini berisi informasi mengenai Praktikum Pemrograman Web 2026</p>
+                <img src="logo.png"
+                     alt="Logo"
+                 width="100">
+            </header>
+<hr>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#informasi"> Informasi Sistem</a>
+        </li>
+        <li>
+            <a href="#daftar-mahasiswa"> Daftar Mahasiswa</a>
+        </li>
+        <li>
+            <a href="#form-tambah"> Tambah Mahasiswa</a>
+        </li>
+    </ul>
+</nav>
+
+<hr>
+ 
+<main>
+    <section id="#informasi">
+        <h2>Informasi Sistem</h2>
+        <p>Sistem ini adalah sistem yang digunakan untuk mengelola informasi terkait Mahasiswa Teknik Informatika</p>
+        <article>
+            <h3>Sistem Informasi Data Mahasiswa</h3>
+            <p> Sistem ini dibuat untuk keperluan matakuliah Praktikum Pemrograman Web</p>
+        </article>
+    </section>
+    
+    <hr>
+    <section id="#daftar-mahasiswa">
+       <h2>Daftar Mahasiswa Aktif</h2>
+       <p>Berikut daftar mahasiswa yang terdaftar masih aktif</p> 
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Foto</th>
+            <th>NPM</th>
+            <th>Nama Lengkap</th>
+            <th>Program Studi</th>
+            <th>Angkatan</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td> <img src="foto.jpeg"
+                alt="Foto"
+                length="50" width="50"></td></td>
+            <td>2415061067</td>
+            <td>Jehan Reza Pahlevi</td>
+            <td>Teknik Informatika</td>
+            <td>2024</td>
+            <td>jehanrezare8@gmail.com</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td> <img src="foto.jpeg"
+                alt="Foto"
+                length="50" width="50"></td>
+            <td>2415061067</td>
+            <td>Jehan Reza Pahlevi</td>
+            <td>Teknik Informatika</td>
+            <td>2024</td>
+            <td>jehanrezare8@gmail.com</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td> <img src="foto.jpeg"
+                alt="Foto"
+                length="50" width="50"></td>
+            <td>2415061067</td>
+            <td>Jehan Reza Pahlevi</td>
+            <td>Teknik Informatika</td>
+            <td>2024</td>
+            <td>jehanrezare8@gmail.com</td>
+        </tr>
+        
+    </tbody>
+</table>  
+    </section>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2315061118</td>
+                        <td>M. Sidiq Firdaus</td>
+                        <td>Teknik Informatika</td>
+                        <td>2023</td>
+                        <td>sidiq@example.com</td>
+                        <td>Aktif</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2315061120</td>
+                        <td>Andi Saputra</td>
+                        <td>Teknik Informatika</td>
+                        <td>2023</td>
+                        <td>andi@example.com</td>
+                        <td>Aktif</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2415061005</td>
+                        <td></td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td></td>
+                        <td>Aktif</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <section id="form-tambah">
+
+            <h2>Tambah Mahasiswa Baru</h2>
+
+            <p>
+                Silakan isi formulir berikut untuk menambahkan
+                data mahasiswa baru.
+            </p>
+
+            <form action="#" method="POST">
+
+                <fieldset>
+
+                    <legend>Data Mahasiswa</legend>
+                    <p>
+                        <label for="npm">NPM:</label><br>
+
+                        <input 
+                            type="text"
+                            id="npm"
+                            name="npm"
+                            placeholder="Contoh : 2315061118"
+                            required
+                            pattern="[0-9]{8,12}"
+                            title="NPM harus berupa angka 8-12 digit"
+                        >
+                        <br>
+
+                        <small>
+                            NPM harus berupa angka 8-12 digit.
+                        </small>
+                    </p>
+
+                    <p>
+                        <label for="nama">Nama Lengkap:</label><br>
+
+                        <input 
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Contoh : M. Sidiq Firdaus"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                        >
+                    </p>
+                    <p>
+                        <label for="program_studi">
+                            Program Studi:
+                        </label><br>
+
+                        <select 
+                            id="program_studi"
+                            name="program_studi"
+                            required
+                        >
+
+                            <option value="">
+                                Pilih Program Studi
+                            </option>
+
+                            <option value="Teknik Informatika">
+                                Teknik Informatika
+                            </option>
+
+                        </select>
+                    </p>
+                    <p>
+                        <label for="angkatan">
+                            Tahun Angkatan:
+                        </label><br>
+
+                        <input 
+                            type="number"
+                            id="angkatan"
+                            name="angkatan"
+                            placeholder="Contoh : 2024"
+                            required
+                            min="2018"
+                            max="2026"
+                        >
+                    </p>
+                    <p>
+                        <label for="email">
+                            Alamat Email:
+                        </label><br>
+
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Contoh : email@example.com"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <button type="submit">
+                            Simpan Data Mahasiswa
+                        </button>
+
+                        <button type="reset">
+                            Reset Formulir
+                        </button>
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
